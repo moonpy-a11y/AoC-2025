@@ -1,1 +1,226 @@
+# --- AoC 2025 - Day 1: Secret Entrance ---
 
+# 0. Configuration and Imports
+# -----------------------------------------------------------------------------
+import os
+import sys
+
+# Define input filename - typically both parts use the same 'input.txt'
+INPUT_FILENAME = "input.txt"
+
+# Set up paths for convenience
+# In a real .ipynb, this would be: NOTEBOOK_DIR = os.path.dirname(os.path.abspath('__file__'))
+# For this script compatibility, we use:
+NOTEBOOK_DIR = os.getcwd() 
+
+
+# 1. Load Input Data
+# -----------------------------------------------------------------------------
+def load_input_data(filename):
+    """
+    Loads input data from a specified file.
+    Assumes the input file is in the same directory as the notebook.
+    """
+    filepath = os.path.join(NOTEBOOK_DIR, filename)
+    try:
+        with open(filepath, 'r') as f:
+            # Read all lines and strip whitespace from each
+            return [line.strip() for line in f.readlines()]
+    except FileNotFoundError:
+        print(f"Error: Input file '{filename}' not found at '{filepath}'")
+        return [] # Return an empty list to prevent further errors
+
+# Load the raw data once for both parts
+raw_data = load_input_data(INPUT_FILENAME)
+
+# Optional: Print a preview of the data to ensure it loaded correctly
+if raw_data:
+    print(f"Loaded {len(raw_data)} lines from '{INPUT_FILENAME}'.")
+    print(f"First 5 lines: {raw_data[:5]}\n")
+else:
+    print("No data loaded (or file not found). Operations will rely on test data.\n")
+
+
+# =============================================================================
+# >>> START PART 1 (Solve this first!) <<<
+# =============================================================================
+
+# 2. Part 1 Data Preprocessing / Parsing
+# -----------------------------------------------------------------------------
+def parse_data_part1(data_lines):
+    """
+    Parses the raw input data for Part 1.
+    Input format: "L68", "R48"
+    Output format: List of tuples [('L', 68), ('R', 48)]
+    """
+    print("Parsing data for Part 1...")
+    if not data_lines: 
+        return []
+
+    parsed_data = []
+    for line in data_lines:
+        if not line: continue
+        # First char is direction, rest is the integer amount
+        direction = line[0]
+        amount = int(line[1:])
+        parsed_data.append((direction, amount))
+
+    return parsed_data
+
+parsed_input_part1 = parse_data_part1(raw_data)
+
+
+# 3. Part 1 Solution Algorithm
+# -----------------------------------------------------------------------------
+def solve_part1(data):
+    """
+    Solves the first part of the puzzle.
+    Simulates a dial (0-99) starting at 50.
+    Counts how many times it lands exactly on 0.
+    """
+    print("Solving Part 1...")
+    
+    current_position = 50
+    zero_hits = 0
+    
+    for direction, amount in data:
+        if direction == 'R':
+            # Add amount, wrap around 100
+            current_position = (current_position + amount) % 100
+        elif direction == 'L':
+            # Subtract amount, wrap around 100 
+            # (Python's % operator handles negative numbers correctly for circular logic)
+            current_position = (current_position - amount) % 100
+            
+        # Check if we landed on 0
+        if current_position == 0:
+            zero_hits += 1
+
+    return zero_hits
+
+part1_answer = solve_part1(parsed_input_part1)
+print(f"Part 1 Answer: {part1_answer}\n")
+
+
+# 4. Part 1 Testing
+# -----------------------------------------------------------------------------
+EXAMPLE_INPUT_PART1_STR = """
+L68
+L30
+R48
+L5
+R60
+L55
+L1
+L99
+R14
+L82
+"""
+EXAMPLE_EXPECTED_PART1 = 3
+
+def test_part1():
+    print("Running Part 1 example test...")
+    example_raw_data = EXAMPLE_INPUT_PART1_STR.strip().split('\n')
+    example_parsed_data = parse_data_part1(example_raw_data)
+    result = solve_part1(example_parsed_data)
+    
+    assert result == EXAMPLE_EXPECTED_PART1, \
+        f"Part 1 Example Failed! Expected {EXAMPLE_EXPECTED_PART1}, Got {result}"
+    print("Part 1 example test passed! logic is sound.\n")
+
+# Run the test
+test_part1()
+
+
+# =============================================================================
+# >>> START PART 2 (Only after solving Part 1) <<<
+# =============================================================================
+
+# 5. Part 2 Data Preprocessing / Parsing
+# -----------------------------------------------------------------------------
+def parse_data_part2(data_lines):
+    """
+    Parses the raw input data for Part 2.
+    """
+    print("Parsing data for Part 2...")
+    if not data_lines:
+        return []
+
+    # Part 2 uses the exact same parsed structure as Part 1
+    return parse_data_part1(data_lines)
+
+parsed_input_part2 = parse_data_part2(raw_data)
+
+
+# 6. Part 2 Solution Algorithm
+# -----------------------------------------------------------------------------
+def solve_part2(data):
+    """
+    Solves the second part of the puzzle (method 0x434C49434B).
+    Counts EVERY time the dial passes 0, even during rotation.
+    
+    Logic:
+    - The dial is 0-99.
+    - Passing '0' is mathematically equivalent to crossing a multiple of 100 
+      on a continuous number line.
+    - R movements increase value: We count multiples of 100 in range (current, current + amount]
+    - L movements decrease value: We count multiples of 100 in range [current - amount, current)
+    """
+    print("Solving Part 2...")
+    
+    current_position = 50
+    total_zeros = 0
+    
+    for direction, amount in data:
+        if direction == 'R':
+            # Moving Right (Increasing)
+            # We cover the range of integers from (current_position + 1) to (current_position + amount)
+            # We want to know how many multiples of 100 are in that range.
+            # Formula: floor(end / 100) - floor(start / 100)
+            end_val = current_position + amount
+            zeros_passed = (end_val // 100) - (current_position // 100)
+            total_zeros += zeros_passed
+            
+            # Update position (0-99)
+            current_position = end_val % 100
+            
+        elif direction == 'L':
+            # Moving Left (Decreasing)
+            # We cover the range from (current_position - 1) down to (current_position - amount)
+            # Interval: [current_position - amount, current_position - 1]
+            # Formula for multiples of k in [A, B]: floor(B/k) - floor((A-1)/k)
+            # Here: B = current_position - 1, A = current_position - amount
+            
+            range_top = current_position - 1
+            range_bottom = current_position - amount
+            
+            zeros_passed = (range_top // 100) - ((range_bottom - 1) // 100)
+            total_zeros += zeros_passed
+            
+            # Update position (0-99)
+            current_position = (current_position - amount) % 100
+
+    return total_zeros
+
+part2_answer = solve_part2(parsed_input_part2)
+print(f"Part 2 Answer: {part2_answer}\n")
+
+
+# 7. Part 2 Testing
+# -----------------------------------------------------------------------------
+# Test using the example from the Part 2 description
+EXAMPLE_INPUT_PART2_STR = EXAMPLE_INPUT_PART1_STR
+EXAMPLE_EXPECTED_PART2 = 6
+
+def test_part2():
+    print("Running Part 2 example test...")
+    example_raw_data = EXAMPLE_INPUT_PART2_STR.strip().split('\n')
+    example_parsed_data = parse_data_part2(example_raw_data)
+    result = solve_part2(example_parsed_data)
+    
+    assert result == EXAMPLE_EXPECTED_PART2, \
+        f"Part 2 Example Failed! Expected {EXAMPLE_EXPECTED_PART2}, Got {result}"
+    print("Part 2 example test passed! The logic handles the snowballs correctly.\n")
+
+# Run the Part 2 test
+test_part2()
