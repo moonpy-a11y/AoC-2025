@@ -113,4 +113,4 @@ input.txt
 .ipynb_checkpoints/
 ````
 
-Would you like me to explain how to read the input files in Python if they aren't in the same folder (or if you decide to hide them)?
+
