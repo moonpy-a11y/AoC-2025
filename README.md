@@ -4,7 +4,7 @@
 ![Language](https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Environment](https://img.shields.io/badge/Environment-Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Year](https://img.shields.io/badge/Year-2025-blue?style=for-the-badge&labelColor=0f0f23)
-![Stars](https://img.shields.io/badge/Stars-14%20%2F%2024-yellow?style=for-the-badge&labelColor=0f0f23)
+![Stars](https://img.shields.io/badge/Stars-16%20%2F%2024-yellow?style=for-the-badge&labelColor=0f0f23)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ## 📖 About
