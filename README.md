@@ -72,7 +72,7 @@ My solutions are organized into daily folders. Each folder contains the notebook
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/pymoon.git](https://github.com/YOUR_USERNAME/pymoon.git)
+    git clone [https://github.com/moonpy-a11y/pymoon.git](https://github.com/moonpy-a11y/pymoon.git)
     cd pymoon
     ```
 
