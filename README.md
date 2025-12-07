@@ -29,31 +29,43 @@ My solutions are organized into daily folders. Each folder contains the notebook
 
 | Day | Puzzle Name | Part 1 | Part 2 | Solution |
 | :---: | :--- | :---: | :---: | :---: |
-| 01 | TBD | - | - | [View](https://www.google.com/search?q=./Day%25201/Day%25201_code.ipynb) |
-| 02 | TBD | - | - | [View](https://www.google.com/search?q=./Day%25202/Day%25202_code.ipynb) |
-| 03 | TBD | - | - | [View](https://www.google.com/search?q=./Day%25203/Day%25203_code.ipynb) |
-| 04 | TBD | - | - | [View](https://www.google.com/search?q=./Day%25204/Day%25204_code.ipynb) |
-| 05 | TBD | - | - | [View](https://www.google.com/search?q=./Day%25205/Day%25205_code.ipynb) |
-| 06 | TBD | - | - | [View](https://www.google.com/search?q=./Day%25206/Day%25206_code.ipynb) |
-| 07 | TBD | - | - | [View](https://www.google.com/search?q=./Day%25207/Day%25207_code.ipynb) |
-| 08 | TBD | - | - | [View](https://www.google.com/search?q=./Day%25208/Day%25208_code.ipynb) |
-| 09 | TBD | - | - | [View](https://www.google.com/search?q=./Day%25209/Day%25209_code.ipynb) |
-| 10 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252010/Day%252010_code.ipynb) |
-| 11 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252011/Day%252011_code.ipynb) |
-| 12 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252012/Day%252012_code.ipynb) |
-| 13 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252013/Day%252013_code.ipynb) |
-| 14 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252014/Day%252014_code.ipynb) |
-| 15 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252015/Day%252015_code.ipynb) |
-| 16 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252016/Day%252016_code.ipynb) |
-| 17 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252017/Day%252017_code.ipynb) |
-| 18 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252018/Day%252018_code.ipynb) |
-| 19 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252019/Day%252019_code.ipynb) |
-| 20 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252020/Day%252020_code.ipynb) |
-| 21 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252021/Day%252021_code.ipynb) |
-| 22 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252022/Day%252022_code.ipynb) |
-| 23 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252023/Day%252023_code.ipynb) |
-| 24 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252024/Day%252024_code.ipynb) |
-| 25 | TBD | - | - | [View](https://www.google.com/search?q=./Day%252025/Day%252025_code.ipynb) |
+| 01 | Secret Entrance | ⭐ | ⭐ | [View](./Day%201/Day%201_code.ipynb) |
+| 02 | Gift Shop | ⭐ | ⭐ | [View](./Day%202/Day%202_code.ipynb) |
+| 03 | Lobby | ⭐ | ⭐ | [View](./Day%203/Day%203_code.ipynb) |
+| 04 | Printing Department | ⭐ | ⭐ | [View](./Day%204/Day%204_code.ipynb) |
+| 05 | Cafeteria | ⭐ | ⭐ | [View](./Day%205/Day%205_code.ipynb) |
+| 06 | Trash Compactor |⭐ | ⭐| [View](./Day%206/Day%206_code.ipynb) |
+| 07 | Laboratories | ⭐ | ⭐ | [View](./Day%207/Day%207_code.ipynb) |
+| 08 | TBD | - | - | [View](./Day%208/Day%208_code.ipynb) |
+| 09 | TBD | - | - | [View](./Day%209/Day%209_code.ipynb) |
+| 10 | TBD | - | - | [View](./Day%2010/Day%2010_code.ipynb) |
+| 11 | TBD | - | - | [View](./Day%2011/Day%2011_code.ipynb) |
+| 12 | TBD | - | - | [View](./Day%2012/Day%2012_code.ipynb) |
+| 13 | TBD | - | - | [View](./Day%2013/Day%2013_code.ipynb) |
+| 14 | TBD | - | - | [View](./Day%2014/Day%2014_code.ipynb) |
+| 15 | TBD | - | - | [View](./Day%2015/Day%2015_code.ipynb) |
+| 16 | TBD | - | - | [View](./Day%2016/Day%2016_code.ipynb) |
+| 17 | TBD | - | - | [View](./Day%2017/Day%2017_code.ipynb) |
+| 18 | TBD | - | - | [View](./Day%2018/Day%2018_code.ipynb) |
+| 19 | TBD | - | - | [View](./Day%2019/Day%2019_code.ipynb) |
+| 20 | TBD | - | - | [View](./Day%2020/Day%2020_code.ipynb) |
+| 21 | TBD | - | - | [View](./Day%2021/Day%2021_code.ipynb) |
+| 22 | TBD | - | - | [View](./Day%2022/Day%2022_code.ipynb) |
+| 23 | TBD | - | - | [View](./Day%2023/Day%2023_code.ipynb) |
+| 24 | TBD | - | - | [View](./Day%2024/Day%2024_code.ipynb) |
+| 25 | TBD | - | - | [View](./Day%2025/Day%2025_code.ipynb) |) |
+| 02 | TBD | - | - | [View](./Day%202/Day%202_code.ipynb) |
+| 03 | TBD | - | - | [View](./Day%203/Day%203_code.ipynb) |
+| 04 | TBD | - | - | [View](./Day%204/Day%204_code.ipynb) |
+| 05 | TBD | - | - | [View](./Day%205/Day%205_code.ipynb) |
+| 06 | TBD | - | - | [View](./Day%206/Day%206_code.ipynb) |
+| 07 | TBD | - | - | [View](./Day%207/Day%207_code.ipynb) |
+| 08 | TBD | - | - | [View](./Day%208/Day%208_code.ipynb) |
+| 09 | TBD | - | - | [View](./Day%209/Day%209_code.ipynb) |
+| 10 | TBD | - | - | [View](./Day%2010/Day%2010_code.ipynb) |
+| 11 | TBD | - | - | [View](./Day%2011/Day%2011_code.ipynb) |
+| 12 | TBD | - | - | [View](./Day%2012/Day%2012_code.ipynb) |
+
 
 ## 💻 How to Run
 
