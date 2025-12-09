@@ -36,7 +36,7 @@ My solutions are organized into daily folders. Each folder contains the notebook
 | 05 | Cafeteria | ⭐ | ⭐ | [View](./Day%205/Day%205_code.ipynb) |
 | 06 | Trash Compactor |⭐ | ⭐| [View](./Day%206/Day%206_code.ipynb) |
 | 07 | Laboratories | ⭐ | ⭐ | [View](./Day%207/Day%207_code.ipynb) |
-| 08 | TBD | - | - | [View](./Day%208/Day%208_code.ipynb) |
+| 08 | Playground | ⭐ | ⭐ | [View](./Day%208/Day%208_code.ipynb) |
 | 09 | TBD | - | - | [View](./Day%209/Day%209_code.ipynb) |
 | 10 | TBD | - | - | [View](./Day%2010/Day%2010_code.ipynb) |
 | 11 | TBD | - | - | [View](./Day%2011/Day%2011_code.ipynb) |
