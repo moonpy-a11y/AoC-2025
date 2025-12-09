@@ -4,7 +4,7 @@
 ![Language](https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Environment](https://img.shields.io/badge/Environment-Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Year](https://img.shields.io/badge/Year-2025-blue?style=for-the-badge&labelColor=0f0f23)
-![Stars](https://img.shields.io/badge/Stars-16%20%2F%2024-yellow?style=for-the-badge&labelColor=0f0f23)
+![Stars](https://img.shields.io/badge/Stars-18%20%2F%2024-yellow?style=for-the-badge&labelColor=0f0f23)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ## 📖 About
@@ -37,7 +37,7 @@ My solutions are organized into daily folders. Each folder contains the notebook
 | 06 | Trash Compactor |⭐ | ⭐| [View](./Day%206/Day%206_code.ipynb) |
 | 07 | Laboratories | ⭐ | ⭐ | [View](./Day%207/Day%207_code.ipynb) |
 | 08 | Playground | ⭐ | ⭐ | [View](./Day%208/Day%208_code.ipynb) |
-| 09 | TBD | - | - | [View](./Day%209/Day%209_code.ipynb) |
+| 09 | Ｍｏｖｉｅ　Ｔｈｅａｔｅｒ | ⭐ | ⭐ | [View](./Day%209/Day%209_code.ipynb) |
 | 10 | TBD | - | - | [View](./Day%2010/Day%2010_code.ipynb) |
 | 11 | TBD | - | - | [View](./Day%2011/Day%2011_code.ipynb) |
 | 12 | TBD | - | - | [View](./Day%2012/Day%2012_code.ipynb) |
