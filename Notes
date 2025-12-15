@@ -120,5 +120,70 @@ print(f"Part 1 Answer: {part1_answer}\n")
 
 # # Uncomment the line below to run your Part 1 test after implementing solve_part1
 # # test_part1()
+# =============================================================================
+# >>> START PART 2 (Only after solving Part 1) <<<
+# =============================================================================
+
+# 5. Part 2 Data Preprocessing / Parsing (often reuses Part 1's parsing, or slightly modifies it)
+# -----------------------------------------------------------------------------
+# Sometimes Part 2 uses the exact same parsed data as Part 1.
+# Other times, it requires a slight modification or even a completely different parsing.
+def parse_data_part2(data_lines):
+    """
+    Parses the raw input data for Part 2.
+    Often, this is identical to parse_data_part1, or a minor variation.
+    """
+    print("Parsing data for Part 2...")
+    if not data_lines:
+        return []
+
+    # --- Your Part 2 Parsing Logic Here ---
+    # You might reuse parse_data_part1 directly if the structure is the same:
+    # return parse_data_part1(data_lines)
+
+    # Or modify slightly:
+    # return [int(line) * 2 for line in data_lines if line] # Example: double each number
+
+    return data_lines # Placeholder: returning raw data
+
+parsed_input_part2 = parse_data_part2(raw_data)
 
 
+# 6. Part 2 Solution Algorithm
+# -----------------------------------------------------------------------------
+def solve_part2(data):
+    """
+    Solves the second part of the puzzle.
+    'data' here is the preprocessed input specifically for Part 2.
+    """
+    print("Solving Part 2...")
+    # --- Your Part 2 Algorithm Here ---
+    # This is where the core logic to find the Part 2 answer goes.
+    # It should operate on the 'data' structure created by parse_data_part2.
+
+    # Placeholder result
+    return "Part 2 Solution Not Implemented Yet"
+
+part2_answer = solve_part2(parsed_input_part2)
+print(f"Part 2 Answer: {part2_answer}\n")
+
+
+# 7. Part 2 Testing (Optional but Recommended)
+# -----------------------------------------------------------------------------
+# If the problem provides example inputs and expected outputs for Part 2,
+# use this section to verify your solve_part2 function.
+
+# EXAMPLE_INPUT_PART2_STR = EXAMPLE_INPUT_PART1_STR # Often the same example input as Part 1
+# EXAMPLE_EXPECTED_PART2 = 241861950 # Example for AoC Day 1, Year 2020, three numbers sum to 2020
+
+# def test_part2():
+#     print("Running Part 2 example test...")
+#     example_raw_data = EXAMPLE_INPUT_PART2_STR.strip().split('\n')
+#     example_parsed_data = parse_data_part2(example_raw_data) # Use parse_data_part2
+#     result = solve_part2(example_parsed_data)
+#     assert result == EXAMPLE_EXPECTED_PART2, \
+#         f"Part 2 Example Failed! Expected {EXAMPLE_EXPECTED_PART2}, Got {result}"
+#     print("Part 2 example test passed!\n")
+
+# # Uncomment the line below to run your Part 2 test after implementing solve_part2
+# # test_part2()
