@@ -29,18 +29,18 @@ My solutions are organized into daily folders. Each folder contains the notebook
 
 | Day | Puzzle Name | Part 1 | Part 2 | Solution |
 | :---: | :--- | :---: | :---: | :---: |
-| 01 | Secret Entrance | ⭐ | ⭐ | [View](./Day%201/Day%201_code.ipynb) |
-| 02 | Gift Shop | ⭐ | ⭐ | [View](./Day%202/Day%202_code.ipynb) |
-| 03 | Lobby | ⭐ | ⭐ | [View](./Day%203/Day%203_code.ipynb) |
-| 04 | Printing Department | ⭐ | ⭐ | [View](./Day%204/Day%204_code.ipynb) |
-| 05 | Cafeteria | ⭐ | ⭐ | [View](./Day%205/Day%205_code.ipynb) |
-| 06 | Trash Compactor |⭐ | ⭐| [View](./Day%206/Day%206_code.ipynb) |
-| 07 | Laboratories | ⭐ | ⭐ | [View](./Day%207/Day%207_code.ipynb) |
-| 08 | Playground | ⭐ | ⭐ | [View](./Day%208/Day%208_code.ipynb) |
-| 09 | Ｍｏｖｉｅ　Ｔｈｅａｔｅｒ | ⭐ | ⭐ | [View](./Day%209/Day%209_code.ipynb) |
-| 10 | Factory | ⭐ | ⭐ |  [View](./Day%2010/Day%2010_code.ipynb) |
-| 11 | Reactor | ⭐ | ⭐ | [View](./Day%2011/Day%2011_code.ipynb) |
-| 12 | Christmas Tree Farm | ⭐ | ⭐ | [View](./Day%2012/Day%2012_code.ipynb) |
+| 01 | Secret Entrance | ⭐ | ⭐ | [View](./pymoon/Day%2001/Day%201_code.ipynb) |
+| 02 | Gift Shop | ⭐ | ⭐ | [View](./pymoon/Day%2002/Day%202_code.ipynb) |
+| 03 | Lobby | ⭐ | ⭐ | [View](./pymoon/Day%2003/Day%203_code.ipynb) |
+| 04 | Printing Department | ⭐ | ⭐ | [View](./pymoon/Day%2004/Day%204_code.ipynb) |
+| 05 | Cafeteria | ⭐ | ⭐ | [View](./pymoon/Day%2005/Day%205_code.ipynb) |
+| 06 | Trash Compactor | ⭐ | ⭐ | [View](./pymoon/Day%2006/Day%206_code.ipynb) |
+| 07 | Laboratories | ⭐ | ⭐ | [View](./pymoon/Day%2007/Day%207_code.ipynb) |
+| 08 | Playground | ⭐ | ⭐ | [View](./pymoon/Day%2008/Day%208_code.ipynb) |
+| 09 | Movie Theater | ⭐ | ⭐ | [View](./pymoon/Day%2009/Day%209_code.ipynb) |
+| 10 | Factory | ⭐ | ⭐ | [View](./pymoon/Day%2010/Day%2010_code.ipynb) |
+| 11 | Reactor | ⭐ | ⭐ | [View](./pymoon/Day%2011/Day%2011_code.ipynb) |
+| 12 | Christmas Tree Farm | ⭐ | ⭐ | [View](./pymoon/Day%2012/Day%2012_code.ipynb) |
 
 
 ## 💻 How to Run
